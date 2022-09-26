@@ -10,18 +10,20 @@ levels = {
     5:75
     }
 
-def roll_exp(current_exp):
+def roll_exp():
+    global exp
     gained = random.randint(4, 8)
-    total = gained + current_exp
-    return total, gained
+    exp = gained + exp
+    return exp, gained
 
 while True:
 
     fight = str(input('Fight? '))
 
     if fight == 'yes':
-        res = roll_exp(exp)
+        res = roll_exp()
         print(f'Gained: {res[1]}')
         print(f'Current exp: {res[0]}')
+        print(exp)
     else:
         quit()
