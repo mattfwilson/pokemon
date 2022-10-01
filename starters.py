@@ -103,7 +103,6 @@ yourPoke.setNickname(newNickname)
 print(f'You changed your {yourPoke.getName()}\'s nickname to {yourPoke.getNickname()}.')
 print(f'Your starter Pokemon\'s moveset is: {yourPoke.getMoveset()}')
 
-
-
-
 quit()
+
+# test
