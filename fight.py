@@ -4,7 +4,7 @@ exp = 0
 
 levels = {
     1:10,
-    2: 20,
+    2:20,
     3:35,
     4:50,
     5:75
@@ -22,8 +22,7 @@ while True:
 
     if fight == 'yes':
         res = roll_exp()
-        print(f'Gained: {res[1]}')
-        print(f'Current exp: {res[0]}')
-        print(exp)
+        print(f'EXP Gained: {res[1]}')
+        print(f'Total EXP: {res[0]}')
     else:
         quit()
